@@ -93,6 +93,6 @@ class Reporter() extends Actor {
   }
   
   override def postStop() = {
-    println("Reporter post-start")
+    println("Reporter post-stop")
   }
 }
