@@ -75,7 +75,7 @@ class Reporter() extends Actor {
       println(s"$name: I am $name")
       
     case DontHitMe(name, hit) =>
-      println(s"$name: Do Hit Me, I had been $hit times")
+      println(s"$name: Don't Hit Me, I had been hit $hit times")
       
     case ResponseHit(name, hit) =>
       println(s"$name: I had been hit $hit times")
