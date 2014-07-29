@@ -46,7 +46,7 @@ class Penguin(val name: String) extends Actor {
     
     case QueryHit => rQueryHit()
     
-    case Why => rWhy()
+    case Why() => rWhy()
     
     case WhoAreYou => rWhoAreYou()
   }
