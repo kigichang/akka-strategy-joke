@@ -83,9 +83,6 @@ class Reporter() extends Actor {
     case HitDong =>
       penguins(9) ! Hit
       penguins(9) ! QueryHit
-      
-    case ex: Exception => 
-      println(">" + ex.getMessage())
   }
   
   override def preStart() = {
